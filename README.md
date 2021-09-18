@@ -7,7 +7,7 @@
 - [ ] some files related to ML -> ishaan
 - [ ] result.html(full) -> nikhil
 - [ ] community.html
-- [ ] changes in form and black fungus section
+- [x] changes in form and black fungus section
 
 
 ## 19/09/21 before 2pm
