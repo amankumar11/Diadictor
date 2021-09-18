@@ -4,7 +4,7 @@
 - [x] index.html(half) -> aman
 - [x] form.html(full) -> nikhil
 - [x] index.html(other half) -> aman
-- [ ] some files related to ML -> ishaan
+- [x] some files related to ML -> ishaan
 - [ ] result.html(full) -> nikhil
 - [ ] community.html
 - [x] changes in form and black fungus section
