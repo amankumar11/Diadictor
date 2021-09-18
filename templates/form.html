@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Volkhov&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/form.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+    <title>DiaDictor</title>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+        <a href="/" class="navbar-brand">DIADICTOR</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul id="navComponents" class="navbar-nav ml-auto">
+                <li id="aboutContact" class="nav-item"><a href="#aboutFooter" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- form  -->
+    <br>
+    <br>
+    <div class="boxform" data-aos="zoom-out">
+        <div class="container">
+            <form id="contact" action="/predict" method="POST">
+
+                <h4>Fill the details carefully</h4>
+                <fieldset>
+                    Full Name:
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus name="name">
+                </fieldset>
+                <fieldset>
+                    Email Id:
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required name="email">
+                </fieldset>
+                <fieldset>
+                    Age:
+                    <input placeholder="Your Age" type="text" tabindex="4" required name="age" id="Age">
+                </fieldset>
+                <fieldset class="dpf">
+                    Diabetes Pedigree Function:
+                    <br>
+                    <input type="radio" id="high" name="fnc" value=2.2>
+                    <label for="high">2.2</label>
+                    <br>
+                    <input type="radio" id="medium" name="fnc" value=1.2>
+                    <label for="medium">1.2</label>
+                    <br>
+                    <input type="radio" id="low" name="fnc" value=0.4 checked>
+                    <label for="low">0.4</label>
+                    <br>
+                    <span class="note">Note:
+                        <ul>
+                       <li> If someone closely related to you has diabetes (like your father/mother/brother/sister) select 2.2</li>
+                       <li>If someone in your kin has diabetes (like grandparents/uncle/aunt) selct 1.2</li>
+                       <li>Otherwise select 0.4</li>
+                    </ul>
+                    </span>
+                </fieldset>
+                <fieldset>
+                    Number of Pregnancies:
+                    <input type="text" tabindex="5" required name="pregnancies" id="pregnancies">
+                    <span class="note">Note:If male then leave this field</span>
+                </fieldset>
+                <fieldset>
+                    Glucose Level:
+                    <input type="text" step="any" tabindex="6" required name="glucose" id="glucose">
+                </fieldset>
+                <fieldset>
+                    Blood Pressure:
+                    <input type="text" step="any" tabindex="7" required name="bp" id="bp">
+                </fieldset>
+                <fieldset>
+                    Skin Thickness:
+                    <input type="text" step="any" tabindex="8" required name="thick" id="thick">
+                </fieldset>
+                <fieldset>
+                    Insulin:
+                    <input type="text" step="any" tabindex="9" required name="insulin" id="insulin">
+                </fieldset>
+                <fieldset>
+                    BMI(Body Mass Index):
+                    <input type="text" step="any" tabindex="10" required name="bmi" id="bmi">
+                </fieldset>
+
+                <fieldset data-aos="fade-in">
+                    <!--<a href="result.html">-->
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    <!--</a>-->
+                </fieldset>
+
+            </form>
+        </div>
+<hr>
+        <!-- footer  -->
+        <section id="aboutFooter" data-aos="fade-up">
+            <h1 class="footerHead">About DIADICTOR</h1>
+            <p>
+                The project uses ML application with a backend in flask. The DiaDictor is basically Diabetes +Predictor and is used to get the probability of diabetes type-2. The results shown are pure predictions which are calculated by analyzing a data set. Our project is for those who wish to know the chances of being affected by this condition before referring to a doctor or those who want to double verify their reports.
+            </p>
+
+            <h2>Mail us at</h2>
+        <a href="mailto: didictor@gmail.com">
+          <h2>Diadictor@gmail.com</h2>
+        </a>
+        <a href="https://github.com/amankumar11/Diabetes-predictor">
+        <image src="{{url_for('static',filename = 'media/github.png')}}" width=50px>
+        </a>
+            <div class="social">
+
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
