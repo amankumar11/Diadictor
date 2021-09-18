@@ -130,6 +130,20 @@ body {
     margin-top: 350px;
 }
 
+/* Predictor Cards */
+.predictors{
+    margin-top: 8%;
+}
+.predictors h5
+{
+    font-size: 3rem;
+}
+.predictors col
+{
+    height: 100%;
+}
+
+
 /*About Project*/
 #about{
     padding: 7%;

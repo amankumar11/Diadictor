@@ -65,17 +65,45 @@
 
     <!--Landing Page-->
     <header id="one" class="header" data-aos="zoom-out">
+      <div class="container">
+
         <div class="text-box">
         <h1 class="heading-primary">
           <!--<span class="heading-primary-main">Heading Primary Main</span>
                       
           <span class="heading-primary-sub">The Diabetes Predictor</span>-->
         </h1>
-        <a href="#aboutDiabetes" class="btn btn-white btn-animated">Check Now !</a>
+        <a href="#predictors" class="btn btn-white btn-animated">Check Now !</a>
+      </div>
       </div>
     </header>
 
     <div class="container">
+
+
+      <!-- predictors -->
+      <div class="row predictors" id="predictors">
+        <div class="col-12 col-md-6">
+          <div class="card bg-dark text-white">
+            <img src="../static/media/dia.jpg" class="card-img" alt="Diabetes-predictor">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Diabetes Predictor</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <button type="button" class="btn btn-light btn-lg">Predict Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="card bg-dark text-white">
+            <img src="../static/media/blackfungusbg3.jpg" class="card-img" alt="Diabetes-predictor">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Black Fungus Predictor</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <button type="button" class="btn btn-light btn-lg">Predict Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
     
         <!--About Diabetes-->
         <div id="aboutDiabetes" class="container" data-aos="slide-up">
@@ -119,10 +147,109 @@
                   </a>
               </div>
           </div>
-        </section>
-    </div>
+      </section>
 
-    
+    <!--Black fungus prediction-->
+    <!-- <section class="blackfungus">
+      <div class="row">
+        <div class="col col-lg-7">
+            
+        </div>
+        <div class="col col-lg-5">
+          <div class="blackfungustext">
+            <h3 class="predicttext">EVEN PREDICT</h3>
+            <h1 class="blackfungusmaintext">Black Fungus</h1>
+            <h3 class="predicttext">Along with diabetes</h3>
+            <a href="/form">
+              <button type="button" class="btn btn-outline-danger">PREDICT NOW</button>
+            </a>
+          </div>
+        </div>
+    </div>
+    </section>
+  </div> -->
+
+    <!--Working-->
+    <section id="working" >
+      <h1 id="Use" data-aos="fade-in">How to Use?</h1>
+      <br>
+      <br>
+      <div class="row">
+          <div class="pcol col-lg-4 col-md-6 col-sm-6" data-aos="fade-right">
+           <div class="card">
+               <div class="card-header">
+                 <h3 class="steps">First Step</h3>
+               </div>
+               <div class="card-body">
+                 <h5 class="steps">Get the reports</h5>
+                 <ul class="list-items">   
+                 <li>Glucose</li>
+                 <li>Blood pressure</li>
+                 <li>Skin thickness</li>
+                 <li>Insulin</li> 
+                 <li>BMI</li> 
+                 <li>diabetes pedigree function</li>
+                </ul>
+                 
+               </div>
+             </div>
+            </div>
+           <div class="pcol col-lg-4 col-md-6 col-sm-6" data-aos="fade-up">
+             <div class="card">
+               <div class="card-header">
+                 <h3 class="steps">Second Step</h3>
+               </div>
+               <div class="card-body">
+                 <h5 class="steps">Enter the details</h5>
+                 <ul class="list-items">
+                 <li>Click the check button</li>
+                 <li>Enter the mentioned details to get a probable result.</li>
+                 <li>Click on predict button</li>
+                  <br>
+                  <br>
+                </ul>
+                   
+               </div>
+             </div>
+           </div>
+           <div class="pcol col-lg-4 col-md-6" data-aos="fade-left">
+             <div class="card">
+               <div class="card-header">
+                 <h3 class="steps">Third Step</h3>
+               </div>
+               <div class="card-body">
+                 <h5 class="steps">Take actions</h5>
+                 <ul class="list-items">
+                 <li>If the predictor shows a probability of more than 70 % then immediately consult a doctor.</li>
+                 <li>If the predictor shows a probability less than 70% then maintain your health. </li>
+                 <br>
+
+                </ul>
+                        
+              </div>
+              </div>
+            </div>
+          </div>
+  </section>
+
+    <!--footer-->
+    <section id="aboutFooter" data-aos="fade-up">
+        <h1 class="footerHead">About DIADICTOR</h1>
+        <p class="emailid">
+          The project uses ML application with a backend in flask. The DiaDictor is basically Diabetes +Predictor and is used to get the probability of diabetes type-2. The results shown are pure predictions which are calculated by analyzing a data set. Our project is for those who wish to know the chances of being affected by this condition before referring to a doctor or those who want to double verify their reports.
+        </p>
+
+        <h2>Mail us at</h2>
+        <a href="mailto: didictor@gmail.com">
+          <h2>Diadictor@gmail.com</h2>
+        </a>
+        <a href="https://github.com/amankumar11/Diabetes-predictor">
+        <image src="{{url_for('static',filename = 'media/github.png')}}" width=50px>
+        </a>
+        <div class="social" id="social">
+            
+        </div>
+    </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
