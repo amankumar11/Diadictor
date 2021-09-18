@@ -6,7 +6,7 @@
 - [x] index.html(other half) -> aman
 - [x] some files related to ML -> ishaan
 - [x] result.html(full) -> aman
-- [ ] community.html
+- [x] community.html
 - [x] changes in form and black fungus section
 
 
