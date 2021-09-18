@@ -133,6 +133,7 @@ body {
 /* Predictor Cards */
 .predictors{
     margin-top: 8%;
+    margin-bottom: 5%;
 }
 .predictors h5
 {
