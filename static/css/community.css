@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.navbar
+{
+    text-align: center;
+}
+.navbar-brand{
+    margin-right: 38%;
+}
+.navbar a
+{
+    color: grey;
+    text-decoration: none !important;
+}
+.navcommunity{
+    font-size: 25px;
+    color: #54a9de;
+    font-weight: 300;
+}
+
 .jumbotron{
    color: white;
    padding-top: 20vh;
@@ -7,6 +28,7 @@
    background-repeat: no-repeat;
    background-size: cover;
    text-align: center;
+   font-family: 'Poppins', sans-serif;
 }
 .landcom{
     background-color: rgba(190, 190, 190, 0.418);
@@ -16,20 +38,32 @@
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
+.landcom h1{
+    font-weight: 400;
+}
+
+.landcom p{
+    font-weight: 300;
+}
+
 .landcom button
 {
     padding: 1.4%;
+    
 }
 
 .blog{
     color: black;
     margin-top: 7%;
+    font-family: 'Poppins', sans-serif;
 }
 .posts{
     color: black;
     font-size: 4rem;
     border-bottom: 2px black solid;
     margin-top: 3%;
+    font-family: 'Poppins', sans-serif;
 }
 .media
 {
