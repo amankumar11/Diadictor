@@ -1,12 +1,13 @@
 # Diadictor Flow
 
 ## 18/09/21 before 8pm
-- [ ] index.html(half) -> aman
-- [ ] form.html(full) -> nikhil
-- [ ] index.html(other half) -> aman
+- [x] index.html(half) -> aman
+- [x] form.html(full) -> nikhil
+- [x] index.html(other half) -> aman
 - [ ] some files related to ML -> ishaan
 - [ ] result.html(full) -> nikhil
 - [ ] community.html
+- [ ] changes in form and black fungus section
 
 
 ## 19/09/21 before 2pm
