@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap');
+
+
+* {
+	margin:0px;
+    margin-top:0px;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* navbar  */
+.navbar{
+    padding-bottom: 1px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Tomorrow', sans-serif;
+}
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+}
+
+
+.homepage{
+    text-align: center;
+    margin-top: 20%;
+    padding: 15%;
+}
+.welcome{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* form  */
+
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #eee;
+	color:#777;
+  
+   
+}
+.boxform{
+    width: 100%;
+    height: 100%;
+	background-image: url('/static/media/form_img-01.png');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: contain;
+    background-position-y: -27px;
+}
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+
+   
+}
+
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="number"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#contact h3 {
+	color: #54a9de;
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:20px;
+    font-family: 'Volkhov', serif;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+    font-size: 15px;
+    
+    color: black;
+    font-family: 'Poppins', sans-serif; 
+    
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="number"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+    border-radius: 18px
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="number"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+#contact  input[type='radio']{
+    margin:0px;
+    padding: 0px;
+   
+}
+
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+#formh{
+    text-align: center;
+}
+#Age{
+    margin: 3px;
+}
+.note{
+    margin: 0px;
+    color: #888;
+}
+/* footer  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Tomorrow:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap');
+
+#aboutFooter {
+    background-color: #54a9de;
+	padding: 40px;
+	text-align: center;
+    color: #eee;
+    font-weight:bold;
+	
+}
+
+.footerHead{
+	font-family: 'Poppins', sans-serif;
+}
+
+#aboutFooter p {
+	font-size: 15px;
+	max-width: 600px;
+	margin: auto;
+}
+
+#aboutFooter h2 {
+	margin: 30px 0;
+	color: var(--primary-color);
+	font-family: 'Poppins', sans-serif;
+}
+
+.social a {
+	margin: 0 5px;
+}
+
+@media screen and (max-width: 480px){
+    body{
+        position: absolute;
+        left: 0;
+        margin-left: 0px;
+    }
+}

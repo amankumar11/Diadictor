@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap');
+
+/*Navbar*/
+.navbar{
+    padding-bottom: 1px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Tomorrow', sans-serif;
+}
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+}
+
+
+.nav-link:hover{
+    text-shadow: 2px 2px 2px #54a9de73;
+}
+
+.homepage{
+    text-align: center;
+    margin-top: 20%;
+    padding: 15%;
+}
+.welcome{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.btn-outline-danger{
+    color:red;
+}
+
+/*Main Page*/
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #eee;
+}
+
+.header {
+    height: 100vh;
+    background-image: url(mainLogoBg.gif);
+    /*background-image: 
+    linear-gradient(to right bottom, 
+   rgba(76, 216, 255, 0.322),
+   rgba(30, 108, 217, 0.329)),
+   url(mainLogoBg.gif);*/
+    
+  background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.brand-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.brand { font-size: 20px; }
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+    font-size: 14px;
+    margin-top: 350px;
+}
+
+/*About Project*/
+#about{
+    padding: 7%;
+}
+.diabetes{
+    text-align: center;
+    padding-top: 7%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.aboutP-heading{
+    color:#54a9de;
+    font-family: 'Volkhov', serif;
+}
+
+.aboutP-para{
+    color:dimgrey;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 80px;
+}
+
+.img2{
+    padding-left: 50px;
+}
+
+/*About diabetes*/
+
+.aboutD-heading{
+    color:#54a9de;
+    font-family: 'Volkhov', serif;
+}
+
+.aboutD-para{
+    color:dimgrey;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 80px;
+}
+
+.aboutP-heading:hover{
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #54a9de71, 0 0 30px #54a9de62, 0 0 40px #54a9de5e, 0 0 55px #54a9de5d, 0 0 75px #54a9de70, 2px 2px 2px rgba(206,89,55,0);
+}
+
+/*buttons*/
+.bubbly-button {
+    font-family: "Helvetica", "Arial", sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #129aee;;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(0, 131, 253, 0.548);
+}
+.bubbly-button:focus {
+    outline: 0;
+}
+.bubbly-button:before, .bubbly-button:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+}
+  .bubbly-button:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, #003cff 20%, transparent 20%), radial-gradient(circle, transparent 20%, #0026ff 20%, transparent 30%), radial-gradient(circle, #003cff 20%, transparent 20%), radial-gradient(circle, #0b21ee 20%, transparent 20%), radial-gradient(circle, transparent 10%, #0f72c4 15%, transparent 20%), radial-gradient(circle, #0026ff 20%, transparent 20%), radial-gradient(circle, #0066ff 20%, transparent 20%), radial-gradient(circle, #2b3ff8 20%, transparent 20%), radial-gradient(circle, #003cff 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+.bubbly-button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #54a9de 20%, transparent 20%), radial-gradient(circle, #003cff 20%, transparent 20%), radial-gradient(circle, transparent 10%, #0077ff 15%, transparent 20%), radial-gradient(circle, #0f40e0 20%, transparent 20%), radial-gradient(circle, #0084ff 20%, transparent 20%), radial-gradient(circle, #3500c7 20%, transparent 20%), radial-gradient(circle, #0011ff 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.bubbly-button:active {
+    transform: scale(0.9);
+    background-color: #0081d6;
+    box-shadow: 0 2px 25px rgb(12, 26, 212);
+}
+.bubbly-button.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+}
+.bubbly-button.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+  
+@keyframes topBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+@keyframes bottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+.btn-outline-primary{
+    margin-left: 40px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.aboutD-heading:hover{
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #54a9de71, 0 0 30px #54a9de62, 0 0 40px #54a9de5e, 0 0 55px #54a9de5d, 0 0 75px #54a9de70, 2px 2px 2px rgba(206,89,55,0);
+}
+
+/* black fungus */
+.blackfungus{
+    /* background-color: black; */
+    background-image: url('../media/blackfungusbg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.blackfungustext{
+    position: absolute;
+    padding-top: 250px;
+    
+}
+
+.predicttext{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.blackfungusmaintext{
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.btn-outline-danger{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+/*working*/
+.steps{
+    color:black;
+}
+
+#working{
+    text-align: center;
+    padding: 6%;
+}
+.list-items{
+    text-align: left;
+    list-style-type: circle;
+    color:dimgrey;
+    font-family: 'Poppins', sans-serif;
+  
+}
+#Use{
+     font-family: 'Volkhov', serif;
+     color: #54a9de;
+}
+.card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 7px ridge #54a9de;
+border-radius: 5px 5px 5px 5px;
+
+}
+
+@media screen and (max-width: 480px){
+    body{
+        position: absolute;
+        left: 0;
+        margin-left: 0px;
+    }
+}
