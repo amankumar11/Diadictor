@@ -1,0 +1,56 @@
+.jumbotron{
+   color: white;
+   padding-top: 20vh;
+   padding-bottom: 20vh;
+   background-image: url('../media/community.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: center;
+}
+.landcom{
+    background-color: rgba(190, 190, 190, 0.418);
+    backdrop-filter: blur(15px);
+    border-radius: 3vh;
+    width: 55%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.landcom button
+{
+    padding: 1.4%;
+}
+
+.blog{
+    color: black;
+    margin-top: 7%;
+}
+.posts{
+    color: black;
+    font-size: 4rem;
+    border-bottom: 2px black solid;
+    margin-top: 3%;
+}
+.media
+{
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.media-body
+{
+    margin-left: 2%;
+}
+.media-body h5
+{
+    font-size: 2rem;
+}
+.media-body p
+{
+    font-size: 1rem;
+    margin-top: 2%;
+}
+.media img
+{
+    width: 30%;
+}

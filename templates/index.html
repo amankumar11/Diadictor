@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="../static/css/main.css">
     <!-- <link rel="stylesheet" href="../static/css/main.css"/> -->
     <!-- <link rel="stylesheet" href="../static/css/footer.css"/> -->
     <link rel="stylesheet" href="/static/footer.css">
@@ -35,7 +35,7 @@
     <!--Navbar-->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#">DIADICTOR</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -47,6 +47,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#working">Working</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./community.html">Community</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#social">Contact Us</a>
@@ -63,58 +66,62 @@
     <!--Landing Page-->
     <header id="one" class="header" data-aos="zoom-out">
         <div class="text-box">
-            <h1 class="heading-primary">
-                <!--<span class="heading-primary-main">Heading Primary Main</span>
-                
-                <span class="heading-primary-sub">The Diabetes Predictor</span>-->
-            </h1>
-            <a href="#aboutDiabetes" class="btn btn-white btn-animated">Check Now !</a>
-        </div>
+        <h1 class="heading-primary">
+          <!--<span class="heading-primary-main">Heading Primary Main</span>
+                      
+          <span class="heading-primary-sub">The Diabetes Predictor</span>-->
+        </h1>
+        <a href="#aboutDiabetes" class="btn btn-white btn-animated">Check Now !</a>
+      </div>
     </header>
 
-    <!--About Diabetes-->
-    <div id="aboutDiabetes" class="container" data-aos="slide-up">
-        <div class="row">
-          <div class="col">
-            <br>
-            <br>
-            <h1 class="aboutD-heading">About Diabetes</h1>
-            <br>
-            <p class="aboutD-para">Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar. The hormone insulin moves sugar from the blood into your cells to be stored or used for energy. With diabetes, your body either doesn’t make enough insulin or can’t effectively use the insulin it does make.</p>
-            <p class="aboutD-para">Untreated high blood sugar from diabetes can damage your nerves, eyes, kidneys, and other organs.</p>
-            <a href="https://www.who.int/health-topics/diabetes#tab=tab_1">Read more</a>
-          </div>
-          <div class="col">
-              <br>
-            <!--<img src='/media/aboutDiabetes.jpg' class="rounded mx-auto d-block" alt="pic">-->
-            <image src="{{url_for('static',filename = 'media/aboutDiabetes.jpg')}}" class="rounded mx-auto d-block" alt="pic">
-            
-          </div>
+    <div class="container">
+    
+        <!--About Diabetes-->
+        <div id="aboutDiabetes" class="container" data-aos="slide-up">
+            <div class="row">
+              <div class="col">
+                <br>
+                <br>
+                <h1 class="aboutD-heading">About Diabetes</h1>
+                <br>
+                <p class="aboutD-para">Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar. The hormone insulin moves sugar from the blood into your cells to be stored or used for energy. With diabetes, your body either doesn’t make enough insulin or can’t effectively use the insulin it does make.</p>
+                <p class="aboutD-para">Untreated high blood sugar from diabetes can damage your nerves, eyes, kidneys, and other organs.</p>
+                <a href="https://www.who.int/health-topics/diabetes#tab=tab_1">Read more</a>
+              </div>
+              <div class="col">
+                  <br>
+                <!--<img src='/media/aboutDiabetes.jpg' class="rounded mx-auto d-block" alt="pic">-->
+                <image src="{{url_for('static',filename = 'media/aboutDiabetes.jpg')}}" class="rounded mx-auto d-block" alt="pic">
+                
+              </div>
+            </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <!--About project-->
+        <section  id="aboutProject" data-aos="slide-up">
+          <div class="row">
+              <div class="col col-lg-6">
+                  <img id="aboutProjectImage" src="{{url_for('static',filename = 'media/aboutProject.jpg')}}" class="rounded mx-auto d-block" alt="pic" width=500px>
+              </div>
+              <div class="col col-lg-6">
+                  <h1 class='aboutP-heading'>About Project</h1>
+                  <p class='aboutP-para'>Diabetes is one of the most fatal chronic condition. Our project is made solely for people of India.</p>  
+                  <p class='aboutP-para'>The project uses ML application with a backend in flask. The DiaDictor is basically Diabetes +Predictor and is used to get the probability of diabetes type-2. The results shown are pure predictions which are calculated by analyzing a data set. Our project is for those who wish to know the chances of being affected by this condition before referring to a doctor or those who want to double verify their reports.</p>      
+                  <br>
+                  <a href="/form">
+                  <button class="bubbly-button">Enter Info!</button>
+                  </a>
+                  <a href="#working">
+                  <button type="button" class="btn btn-outline-primary">Working</button>
+                  </a>
+              </div>
+          </div>
+        </section>
     </div>
-    <br>
-    <br>
-    <br>
-    <!--About project-->
-    <section  id="aboutProject" data-aos="slide-up">
-      <div class="row">
-          <div class="col col-lg-6">
-              <img id="aboutProjectImage" src="{{url_for('static',filename = 'media/aboutProject.jpg')}}" class="rounded mx-auto d-block" alt="pic" width=500px>
-          </div>
-          <div class="col col-lg-6">
-              <h1 class='aboutP-heading'>About Project</h1>
-              <p class='aboutP-para'>Diabetes is one of the most fatal chronic condition. Our project is made solely for people of India.</p>  
-              <p class='aboutP-para'>The project uses ML application with a backend in flask. The DiaDictor is basically Diabetes +Predictor and is used to get the probability of diabetes type-2. The results shown are pure predictions which are calculated by analyzing a data set. Our project is for those who wish to know the chances of being affected by this condition before referring to a doctor or those who want to double verify their reports.</p>      
-              <br>
-              <a href="/form">
-              <button class="bubbly-button">Enter Info!</button>
-              </a>
-              <a href="#working">
-              <button type="button" class="btn btn-outline-primary">Working</button>
-              </a>
-          </div>
-      </div>
-    </section>
+
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
