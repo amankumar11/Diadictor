@@ -1,0 +1,4 @@
+mysql_host: 'localhost'
+mysql_user: 'root'
+mysql_password: 'bakulmi21@K'
+mysql_db: 'diablogs'

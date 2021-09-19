@@ -1,11 +1,21 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 import pickle 
 import numpy as np
 import smtplib
-
+from flask_mysqldb import MySQL
+import yaml
 
 #Initialize the flask App
 app = Flask(__name__)
+
+#configure db
+db = yaml.load(open('db.yaml'))
+app.config['MYSQL_HOST'] = db['mysql_host']
+app.config['MYSQL_USER'] = db['mysql_user']
+app.config['MYSQL_PASSWORD'] = db['mysql_password']
+app.config['MYSQL_DB'] = db['mysql_db']
+
+mysql = MySQL(app) 
 
 model = pickle.load(open('model.pkl', 'rb'))
 
@@ -24,10 +34,24 @@ def form():
 
 @app.route('/community')
 def community():
+    cur = mysql.connection.cursor()
+    resultValue = cur.execute("SELECT * FROM blogs") #returns number of rows in the table
+    if resultValue > 0:
+        blogDetails = cur.fetchall() #all the names and emails would be stored
+        return render_template('community.html', blogDetails = blogDetails )
     return render_template('community.html')
 
-@app.route('/community/form')
+@app.route('/community/form', methods = ['GET', 'POST'])
 def communityform():
+    if request.method == 'POST':
+        blogDetails = request.form
+        title = blogDetails['title']
+        content = blogDetails['content']
+        cur = mysql.connection.cursor() #To execute query commands
+        cur.execute("INSERT INTO blogs(title, content) VALUES(%s, %s)", (title, content))
+        mysql.connection.commit() #to save changes in db
+        cur.close()
+        return redirect ('/community')
     return render_template('communityForm.html')
 
 
