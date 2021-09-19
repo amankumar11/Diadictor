@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.result{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+
+/*Navbar*/
+
+.navbar{
+    padding-bottom: 1px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Tomorrow', sans-serif;
+}
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+}
+
+
+.nav-link:hover{
+    text-shadow: 2px 2px 2px #54a9de73;
+}
+
+.homepage{
+    text-align: center;
+    margin-top: 20%;
+    padding: 15%;
+}
+.welcome{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+body{
+    background-image: url('/static/media/result_pic.png');
+    background-attachment: scroll;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x:2px;
+    background-position-y: 2px;
+    /* text-align: right; */
+
+}
+
+#output{
+    margin-left: 730px;
+}
+
+.mb-3{
+    margin-top: 200px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 200px;
+  
+    
+}
+
+.form-control{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 760px;
+    width:35% ;
+}
+
+.form-label{
+    padding-left: 20px;
+    padding-right: 45px;
+    padding-top: 10px;
+    margin-left: 490px;
+    margin-right: -250px;
+    padding-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color:rgba(0, 0, 0, 0.603);
+    
+}
+
+.btn-outline-primary{
+    margin-left: 841px;
+    margin-right:-243px ;
+    width: 20%;    
+    background-color:#54a9de9a;
+    color:white;
+}
+
+@media screen and (max-width: 480px){
+    body{
+        position: absolute;
+        left: 0;
+        margin-left: 0px;
+    }
+}
