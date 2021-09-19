@@ -22,6 +22,15 @@ def doctor():
 def form():
     return render_template('form.html')
 
+@app.route('/community')
+def community():
+    return render_template('community.html')
+
+@app.route('/community/form')
+def communityform():
+    return render_template('communityForm.html')
+
+
 #To use the predict button in our web-app
 @app.route('/predict',methods=['POST'])
 def predict():
