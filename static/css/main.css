@@ -290,38 +290,6 @@ body {
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #54a9de71, 0 0 30px #54a9de62, 0 0 40px #54a9de5e, 0 0 55px #54a9de5d, 0 0 75px #54a9de70, 2px 2px 2px rgba(206,89,55,0);
 }
 
-/* black fungus */
-.blackfungus{
-    /* background-color: black; */
-    background-image: url('../media/blackfungusbg3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-}
-
-.blackfungustext{
-    position: absolute;
-    padding-top: 250px;
-    
-}
-
-.predicttext{
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-}
-
-.blackfungusmaintext{
-    font-family: 'Tomorrow', sans-serif;
-    font-size: 80px;
-    font-weight: 500;
-}
-
-.btn-outline-danger{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
 
 /*working*/
 .steps{
@@ -357,4 +325,50 @@ border-radius: 5px 5px 5px 5px;
         left: 0;
         margin-left: 0px;
     }
+}
+
+/* footer */
+.footer
+{
+    padding: 5%;
+    background-color: black;
+    color: white;
+}
+.footer .line 
+{
+    border-right: 2px solid white;
+    padding: 2%;
+    text-align: center;
+}
+.footer .links h2
+{
+    font-size: 3rem;
+    text-align: center;
+}
+.footer .links a
+{
+    text-decoration: none;
+    color: white;
+    margin-top: 3%;
+}
+.footer .links .direct
+{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 10%;
+}
+.footer .social
+{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5%;
+}
+.footer .social i
+{
+    margin-left: 4%;
+    color: rgb(197, 197, 197);
+}
+.footer .social i:hover
+{
+    color: white;
 }
