@@ -60,7 +60,7 @@ Here's why:
 * Bhubaneshwar has 2nd highest number of diabetic patients in India.
 * Odisha 6th In Diabetic Deaths In Country.
 * Due to the pandemic situation people try to avoid traveliing and going out in public in such a case using Diadictor will help them get an idea about there chances of having diabetes.
-* People having a history of Diabetes and has suffered from diabetes has higher chances to suffer from black fungus hence expnaind our limits by just adding a slight information diadictor also helps you predict whether you have chances of having black fungus or not.
+* People who suffer from diabetes and who have contacted covid-19 are at a great risk of being infected with black fungus. So we expanded our domain and  added     black fungus risk teller. 
 * If the patient feels he/she has slight chances of having diabetes and is confused whether to consult a doctor or not, Diadictor helps you resolve this issue by giving you a prediction on the scale of 10 and even suggesting doctors.
 
 Diadictor is a useful website that helps the patient predict his chances of having diabetes with an accuracy of 76.04% with 4.5% standard deviation, further user can also schedule an appointment with a doctor in his city.
