@@ -134,16 +134,20 @@ body {
 .predictors{
     margin-top: 8%;
     margin-bottom: 5%;
+    text-align: center;
 }
 .predictors h5
 {
     font-size: 3rem;
 }
-.predictors col
+.predictors .pad
 {
-    height: 100%;
+    padding: auto 2%;
+    margin-top: 17%;
 }
-
+.predictors button{
+    margin-top: 5%;
+}
 
 /*About Project*/
 #about{

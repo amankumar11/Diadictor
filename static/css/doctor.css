@@ -49,13 +49,10 @@ body{
     background-repeat: no-repeat;
     background-position-x:2px;
     background-position-y: 2px;
-    /* text-align: right; */
-
+    text-align: right;
+   
 }
 
-#output{
-    margin-left: 730px;
-}
 
 .mb-3{
     margin-top: 200px;
@@ -77,8 +74,8 @@ body{
     padding-left: 20px;
     padding-right: 45px;
     padding-top: 10px;
-    margin-left: 490px;
-    margin-right: -250px;
+    margin-left: 95px;
+    margin-right: -238px;
     padding-bottom: 15px;
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
@@ -93,6 +90,8 @@ body{
     background-color:#54a9de9a;
     color:white;
 }
+
+
 
 @media screen and (max-width: 480px){
     body{
