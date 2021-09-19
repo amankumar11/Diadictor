@@ -22,17 +22,19 @@
       </nav>
 
       <!-- Form  -->
+      <form action="/community/form", method="POST">
       <div class="container-fluid communityformcontainer">
         <div class="mb-3">
             <label for="Blogname" class="form-label">Blog Title</label>
-            <input type="text" class="form-control" id="blogname" placeholder="Blog Title">
+            <input type="text" class="form-control" name="title" required id="blogname" placeholder="Blog Title">
           </div>
           <div class="mb-3">
             <label for="Blogcontent" class="form-label">Blog Content</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="15"></textarea>
+            <textarea class="form-control" name="content" required id="exampleFormControlTextarea1" rows="15"></textarea>
           </div>
           <button type="submit" class="btn btn-primary postbtn">Post !</button>
       </div>
+    </form>
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
