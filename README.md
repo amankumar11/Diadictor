@@ -163,7 +163,7 @@ Contributions are what make the open source community such an amazing place to l
 
 <!-- CONTACT -->
 ## Contact
-
+<li>
 Aman Kumar - [Github](https://github.com/amankumar11)
 <li>
 Bakul Gupta - [Github](https://github.com/Bakul-G)
