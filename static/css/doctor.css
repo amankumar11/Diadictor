@@ -49,12 +49,14 @@ body{
     background-repeat: no-repeat;
     background-position-x:2px;
     background-position-y: 2px;
+    overflow-x: hidden;
+    background-color: #e0f6ff;
     /* text-align: right; */
 
 }
 
 #output{
-    margin-left: 730px;
+    margin-left: 750px;
 }
 
 .mb-3{
@@ -69,7 +71,7 @@ body{
 .form-control{
     padding-bottom: 20px;
     padding-top: 20px;
-    margin-left: 760px;
+    margin-left: 600px;
     width:35% ;
 }
 
@@ -87,7 +89,7 @@ body{
 }
 
 .btn-outline-primary{
-    margin-left: 841px;
+    margin-left: 680px;
     margin-right:-243px ;
     width: 20%;    
     background-color:#54a9de9a;
