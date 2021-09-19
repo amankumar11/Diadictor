@@ -89,7 +89,7 @@ def predict():
         content = "We suggest you to maintain your health. If in case you want to consult a doctor our appointment scheduler can help you get an appointment in your city."
 
     SUBJECT = 'Reg diabetes prediction by DiaDictor'
-    TEXT = predictText + "\n" + content + "For further reference visit our webpage https://diadictor-diabetes-predictor.herokuapp.com/\nThanks\nRegards\nDiadictor team"
+    TEXT = predictText + "\n" + content + "For further reference visit our webpage https://github.com/amankumar11/Diadictor\nThanks\nRegards\nDiadictor team"
     message = 'Subject: {}\n\n{}'.format(SUBJECT, TEXT)
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
